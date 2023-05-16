@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Projet_Tic</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="projet.css">
+ 
+<style> 
+body{
+  background: #081b29;
+  color: #ededed;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: -10%;
+  width: 100%;
+  padding: 20px 10%;
+  background:transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    font-family:Arial, Helvetica, sans-serif
+
+
+
+}
+.navbar a:hover {
+ color: #00abf0;
+
+
+}
+
+/*       pour la premier page */
+.home{
+    height: 100vh;
+    display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.home-content{
+     position: relative;
+     max-width: 50%;
+}
+
+
+.home-content img{
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    top: -10%;
+    left: 110%;
+    opacity: 0.8;
+    
+}
+.home-content h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.home-content h3{
+
+    font-size: 25px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content  abbr{
+    cursor: pointer;
+}
+/* about us  */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+.heading{
+    height: 1vh;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+span{
+ color: #00abf0;
+
+}
+.about-content{
+   text-align: center;
+
+}
+.about-content h1{
+    height: 2vh;
+}
+.table{
+    display: table;
+    position: absolute;
+     left: 0;
+     height: 20%;
+     width: 95%;
+     margin-bottom: 10px;
+     font-size: 1rem;
+     justify-content: space-between;
+     
+}
+.table td {
+    border: 1px solid #1c3b4f;
+}
+.table th{
+    color: #00abf0;
+    justify-content: space-between;
+}
+/* section travail  */
+.travail{
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-bottom: 30rem;
+}
+.hrat{
+   height:6vh;
+    font-size:  3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+   color: #00abf0;
+   text-shadow: 5px -1px 15px;
+   
+}
+.travail-content{
+    position: relative;
+    border: 1px solid #081b29;
+    width: 100%;
+    height: 100vh;
+}
+.chapite1,.chapite2,.chapite3,.chapite4,.chapite5{
+    font-weight: 700;
+     position: absolute;
+     border: 0;
+     border-radius: 10px;
+     height: 15px;
+     width: 100px;
+     padding: 2%;
+     color: #081b29;
+    background-color: #00abf0;
+    box-shadow: 0 0 5px #00abf0,
+                0 0 25px #00abf0;
+    font-family: Arial, Helvetica, sans-serif;
+     cursor: pointer;
+     transition: .2s all linear;
+}
+.chapite :hover{
+letter-spacing: 1.1px;
+box-shadow: 0 0  5px #00abf0, 0 0  25px #00abf0,
+            0 0   50px #00abf0,0 0   100px #00abf0,
+            0 0 200 px #00abf0;   
+}
+
+.chapite1{
+    top:50%;
+     left:10%;
+}
+
+
+.chapite1 a{
+    color: #081b29;
+    text-decoration: none;
+}
+
+.chapite2{
+    top:50%;
+     left:40%;
+}
+.chapite3{
+    top:50%;
+    left: 70%;
+}
+.chapite4{
+    top:70% ;
+     left: 25%;
+}
+.chapite5{
+    top: 70%;
+    left: 55%;
+}
+</style>
+</head>
+<body>
+   
+
+       <header>
+
+     <nav class="navbar">
+      <a href="#" class="active">Home</a>
+     </nav>
+     </header>
+          <!--   section about home -->
+       
+       <section class="home">
+        <div  class="home-content">
+            <h1> Bienvenue </h1>
+            <h3>site web pour le projet de <abbr title="Techniques de l'information et de la communication">tic</abbr> </h3>    
+              <p>  dans se site vous trouvez les résumes de module <abbr title="Techniques de l'information et de la communication">TIC</abbr> d'aprés les étudiants  de <abbr title="université des sciences et de la Technologie Houari-Boumédiène "> USTHB</abbr> de spécialité informatique section 4 </p>
+                 <img src="web devlopement.png">
+
+     </div>
+       
+       </section >
+       <!-- section about us  -->
+       <section class="about">
+         <h2 class="heading">about <span>us</span></h2>
+          <div class="about-content">
+              <h1>la listes des étudients :</h1>
+              
+            <table class="table">
+              <tr>
+                 <th>le nom</th>
+                <th>le prenom</th>
+                <th>matricule</th>
+                <th>groupe</th>
+                <th>la partie</th>
+              </tr>
+                 <tr>
+                 <td> Ben mahiddi </td>
+                <td>Ouafa</td>
+                <td>222231412408</td>
+                <td>04</td>
+                 <td colspan="2" rowspan="2">01</td>
+                 </tr>
+                 <tr>
+                    <td>Fellah</td>
+                    <td>Fatima</td>
+                    <td>222231573914</td>
+                    <td>04</td>
+                     
+                 </tr>
+                 <tr>
+                    <td>Matouk</td>
+                    <td>Nour el houda</td>
+                    <td>222231588607</td>
+                    <td>04</td>
+                     <td colspan="2" rowspan="2">02</td>
+                 </tr>
+                 <tr>
+                    <td>Moualid</td>
+                    <td>Basma</td>
+                    <td>222231515211</td>
+                    <td>03</td>
+                     
+                 </tr>
+                 <tr>
+                    <td>Chihab</td>
+                    <td>Lina</td>
+                    <td>222231342110</td>
+                    <td>04</td>
+                     <td colspan="2" rowspan="2">03</td>
+                 </tr>
+                 <tr>
+                    <td>Bourouba</td>
+                    <td>Rayan</td>
+                    <td>222231647417</td>
+                    <td>04</td>
+                    
+                 </tr>
+                 <tr>
+                    <td>Imessaoudene</td>
+                    <td>Aldjia</td>
+                    <td>222231376511</td>
+                    <td>03</td>
+                     <td colspan="2" rowspan="2">04</td>
+                 </tr>
+                 <tr>
+                    <td>Chalal</td>
+                    <td>Mohamed</td>
+                    <td>222231555515</td>
+                    <td>01</td>
+                    
+                 </tr>
+                 <tr>
+                    <td>Benchaba</td>
+                    <td>Mohamed Djebril</td>
+                    <td>222231565513</td>
+                    <td>03</td>
+                     <td colspan="2" rowspan="2">05</td>
+                 </tr>
+                 <tr>
+                    <td>Lalahine</td>
+                    <td>ishak</td>
+                    <td>222232403719</td>
+                    <td>02</td>
+                     
+                  </tr>
+            </table>
+          </div>
+       </section>
+           <!--  section about le travail  -->
+       <section class="travail">
+        <h1 class ="hrat"></h1>
+        <div class="travail-content">
+             <h1 class ="hrat">le travail</h1>
+               <div class="chapite">
+                  <!-- chapitre1 -->
+                  <a href="chapitre1.html">   <div class="chapite1">  Section 1</div></a>
+             <!-- chapitre2 -->
+                  <a href="chapitre2.html"> <div class="chapite2"> Section 2 </div></a>
+                
+                  <!-- chapitre3 -->
+             <a href="chapitre3.html"><div class="chapite3"> Section 3 </div></a>
+              
+             <!-- chapitre4 -->
+             <a href="chapitre4.html"> <div class="chapite4"> Section 4 </div></a>
+             
+             <!-- CHAPITRE 5-->
+             <a href="chapitre5.html"><div class="chapite5"> Section 5  </div></a>
+             
+            
+            </div>
+        </div>
+       </section>
+</body>
+</html>

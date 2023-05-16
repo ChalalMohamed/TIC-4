@@ -1,0 +1,189 @@
+body{
+  background: #081b29;
+  color: #ededed;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: -10%;
+  width: 100%;
+  padding: 20px 10%;
+  background:transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    font-family:Arial, Helvetica, sans-serif
+
+
+
+}
+.navbar a:hover {
+ color: #00abf0;
+
+
+}
+
+/*       pour la premier page */
+.home{
+    height: 100vh;
+    display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.home-content{
+     position: relative;
+     max-width: 50%;
+}
+
+
+.home-content img{
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    top: -10%;
+    left: 110%;
+    opacity: 0.8;
+    
+}
+.home-content h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.home-content h3{
+
+    font-size: 25px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content  abbr{
+    cursor: pointer;
+}
+/* about us  */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+.heading{
+    height: 1vh;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+span{
+ color: #00abf0;
+
+}
+.about-content{
+   text-align: center;
+
+}
+.about-content h1{
+    height: 2vh;
+}
+.table{
+    display: table;
+    position: absolute;
+     left: 0;
+     height: 20%;
+     width: 95%;
+     margin-bottom: 10px;
+     font-size: 1rem;
+     justify-content: space-between;
+     
+}
+.table td {
+    border: 1px solid #1c3b4f;
+}
+.table th{
+    color: #00abf0;
+    justify-content: space-between;
+}
+/* section travail  */
+.travail{
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-bottom: 30rem;
+}
+.hrat{
+   height:6vh;
+    font-size:  3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+   color: #00abf0;
+   text-shadow: 5px -1px 15px;
+   
+}
+.travail-content{
+    position: relative;
+    border: 1px solid #081b29;
+    width: 100%;
+    height: 100vh;
+}
+.chapite1,.chapite2,.chapite3,.chapite4,.chapite5{
+    font-weight: 700;
+     position: absolute;
+     border: 0;
+     border-radius: 10px;
+     height: 15px;
+     width: 100px;
+     padding: 2%;
+     color: #081b29;
+    background-color: #00abf0;
+    box-shadow: 0 0 5px #00abf0,
+                0 0 25px #00abf0;
+    font-family: Arial, Helvetica, sans-serif;
+     cursor: pointer;
+     transition: .2s all linear;
+}
+.chapite :hover{
+letter-spacing: 1.1px;
+box-shadow: 0 0  5px #00abf0, 0 0  25px #00abf0,
+            0 0   50px #00abf0,0 0   100px #00abf0,
+            0 0 200 px #00abf0;   
+}
+
+.chapite1{
+    top:50%;
+     left:10%;
+}
+
+
+.chapite1 a{
+    color: #081b29;
+    text-decoration: none;
+}
+
+.chapite2{
+    top:50%;
+     left:40%;
+}
+.chapite3{
+    top:50%;
+    left: 70%;
+}
+.chapite4{
+    top:70% ;
+     left: 25%;
+}
+.chapite5{
+    top: 70%;
+    left: 55%;
+}
